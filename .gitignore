@@ -1,0 +1,31 @@
+﻿# .NET
+bin/
+obj/
+*.user
+.vs/
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+*.tgz
+
+# Secrets and env
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+secrets.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Native build output (Expo prebuild / EAS)
+android/
+ios/
+*.apk
+*.aab
