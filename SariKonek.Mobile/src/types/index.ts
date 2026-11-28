@@ -29,7 +29,6 @@ export interface Order {
   items: OrderItem[];
 }
 
-// Mirrors the API's AuthResponse DTO (used in Phase 9)
 export interface AuthUser {
   email: string;
   fullName: string;
@@ -38,4 +37,18 @@ export interface AuthUser {
 
 export interface AuthResponse extends AuthUser {
   token: string;
+}
+
+export interface RegisterPayload {
+  email: string;
+  password: string;
+  fullName: string;
+  role: Role;
+  storeName?: string; 
+  address?: string;   
+}
+
+export interface CartItem {
+  product: Product;
+  quantity: number;
 }
